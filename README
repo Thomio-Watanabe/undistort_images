@@ -1,0 +1,40 @@
+Author: Thomio Watanabe
+Date: September 2015
+
+-- Brazilian Institute of Robotics --
+
+    DESCRIPTION
+This program reads Camera parameters from a YAML file,
+undistort a list of images and save the results.
+
+To test the program run:
+    $ ./undistort_images camera.yml images_paths.xml
+
+camera.yml is the camera matrix aquired when running the opencv
+cpp sample program cpp-example-calibration
+
+images_paths.xml is the image list file aquired when running the opencv
+cpp sample program cpp-example-imagelist_creator
+
+
+    LICENSE
+This software is realeased under GNU GPLv2 license. 
+
+    OS DEPENDENCIES 
+
+    - gcc
+    - cmake
+    - opencv
+
+    INSTALLATION
+
+1 - Create a build directory
+    $ mkdir build
+
+2 - Enter the directory and call CMake
+    $ cd build
+    $ cmake ..
+
+3 - Compile the code
+    $ make
+
